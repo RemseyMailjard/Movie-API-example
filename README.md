@@ -1,11 +1,29 @@
-Here's a corrected version of the markdown code for better formatting and completeness:
+
 
 ```markdown
 # SQLTest
 
 ## Overview
 SQLTest is a Node.js application that provides a RESTful API to interact with a SQL Server database. This application uses Express.js for handling HTTP requests and `mssql` for database interactions. The app also utilizes environment variables for configuration management.
+Frontend (index.html)
+HTML Structure: Defines the structure of the webpage, including a table to display the list of movies.
+Bootstrap: A CSS framework used to style the webpage and make it responsive.
+JavaScript (movies.js): A script to interact with the backend API to fetch and display movie data in the table.
+Backend (server.js)
+Express.js: Handles HTTP requests and serves API endpoints for the frontend to interact with the database.
+SQL Server: Stores the movie data and is accessed by the backend using SQL queries.'
 
+Complete Tech Stack
+Frontend: HTML, CSS (Bootstrap), JavaScript
+Backend: Node.js, Express.js
+Database: Azure SQL Server
+Environment Configuration: dotenv
+Middleware: CORS, express.json()
+Interaction Flow
+The user opens index.html in a browser.
+The JavaScript in movies.js makes an HTTP GET request to the backend API (e.g., /movies endpoint) to fetch the list of movies.
+The backend receives the request, retrieves the movie data from the SQL Server database, and sends it back as a JSON response.
+The frontend receives the JSON data and dynamically updates the table with the movie information.
 ## Features
 - Connect to a SQL Server database.
 - Retrieve all movies.
